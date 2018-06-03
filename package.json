@@ -12,13 +12,13 @@
 		"Programming Languages"
 	],
     "activationEvents": [
-        "onCommand:ruota.sayHello"
+        "onCommand:ruota.run"
     ],
 	"main": "./extension",
 	"contributes": {
 		"commands": [{
-			"command": "ruota.sayHello",
-			"title": "Ruota: Hello"
+			"command": "ruota.run",
+			"title": "Ruota: Run File"
 		}],
 		"languages": [
 			{
