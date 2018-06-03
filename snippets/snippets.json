@@ -364,5 +364,97 @@
 			"${1:link}.string()"
 		],
 		"description": "(Returns String) Returns a string representation of the Link"
+	},
+
+	"LinkedList": {
+		"prefix": "LinkedList",
+		"body": [
+			"${1:variable} := new LinkedList"
+		],
+		"description": "Creates a new LinkedList"
+	},
+	"LinkedList_head": {
+		"prefix": "LinkedList.head",
+		"body": [
+			"${1:linkedlist}.head"
+		],
+		"description": "(Object:LinkedList.Link) The first Link in the LinkedList, null if List is empty"
+	},
+	"LinkedList_Add": {
+		"prefix": "LinkedList.add",
+		"body": [
+			"${1:linkedlist}.add(${2:&element})"
+		],
+		"description": "(Returns Any) Adds a given element to the LinkedList"
+	},
+	"LinkedList_Iterator": {
+		"prefix": "LinkedList.iterator",
+		"body": [
+			"${1:linkedlist}.iterator()"
+		],
+		"description": "(Returns Any[]) (Inherited) Returns an array of the LinkedList's values"
+	},
+	"LinkedList_ToArray": {
+		"prefix": "LinkedList.toArray",
+		"body": [
+			"${1:linkedlist}.toArray()"
+		],
+		"description": "(Returns Any[]) (Inherited) Returns an array of the LinkedList's values"
+	},
+	"LinkedList_Equals": {
+		"prefix": "LinkedList.equals",
+		"body": [
+			"${1:linkedlist}.equals(${2:linkedlist})"
+		],
+		"description": "(Returns Number) (Inherited) Checks the LinkedList for equality with the given List"
+	},
+	"LinkedList_Index": {
+		"prefix": "LinkedList.index",
+		"body": [
+			"${1:linkedlist}.index(${2:position})"
+		],
+		"description": "(Returns Any) Returns the element at a given position"
+	},
+	"LinkedList_Remove": {
+		"prefix": "LinkedList.remove",
+		"body": [
+			"${1:linkedlist}.remove(${2:position})"
+		],
+		"description": "(Returns Void) Removes the element at a given position"
+	},
+	"LinkedList_Size": {
+		"prefix": "LinkedList.size",
+		"body": [
+			"${1:linkedlist}.size()"
+		],
+		"description": "(Returns Number) Returns the current size of the LinkedList"
+	},
+	"LinkedList_String": {
+		"prefix": "LinkedList.string",
+		"body": [
+			"${1:linkedlist}.string()"
+		],
+		"description": "(Returns String) (Inherited) Returns a string representation of the LinkedList"
+	},
+	"LinkedList_Link_value": {
+		"prefix": "LinkedList.Link.value",
+		"body": [
+			"${1:link}.value"
+		],
+		"description": "(Any) Value for the Link"
+	},
+	"LinkedList_Link_next": {
+		"prefix": "LinkedList.Link.next",
+		"body": [
+			"${1:link}.next"
+		],
+		"description": "(Object:LinkedList.Link) Next Link in the List"
+	},
+	"LinkedList_Link_Init": {
+		"prefix": "LinkedList.Link.init",
+		"body": [
+			"${1:link}.init(${2:value})"
+		],
+		"description": "(Returns Constructor) Constructor for the Link object, assigns itself a given value"
 	}
 }
