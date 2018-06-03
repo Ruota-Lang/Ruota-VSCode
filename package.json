@@ -2,8 +2,9 @@
 	"name": "ruota",
 	"displayName": "Ruota",
 	"description": "Adds Ruota syntax highlighting to VSCode",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "minin",
+	"icon": "Ruota.png",
 	"engines": {
 		"vscode": "^1.23.0"
 	},
