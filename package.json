@@ -11,6 +11,9 @@
 	"categories": [
 		"Programming Languages"
 	],
+	"activationEvents": [
+		"onCommand:extension.sayHello"
+	],
 	"contributes": {
 		"languages": [
 			{
