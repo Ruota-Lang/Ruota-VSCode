@@ -100,5 +100,34 @@
 			"Strings.toLower(${1:string})"
 		],
 		"description": "(Returns String) Converts a string to lowercase"
+	},
+
+	"Arrays_Sort": {
+		"prefix": "Arrays.sort",
+		"body": [
+			"Arrays.sort(${1:array}, ${2:lambda})"
+		],
+		"description": "(Returns Any[]) Sorts an array based on a given comparator function using the quicksort algorithm"
+	},
+	"Arrays_Contains": {
+		"prefix": "Arrays.contains",
+		"body": [
+			"Arrays.contains(${1:array}, ${2:any})"
+		],
+		"description": "(Returns Number) Returns 1 if the array contains the given value, returns 0 otherwise"
+	},
+	"Arrays_Remove": {
+		"prefix": "Arrays.remove",
+		"body": [
+			"Arrays.remove(${1:array}, ${2:index})"
+		],
+		"description": "(Returns Any[]) Removes the value from an array by the given index"
+	},
+	"Arrays_RemoveValue": {
+		"prefix": "Arrays.removeValue",
+		"body": [
+			"Arrays.removeValue(${1:array}, ${2:value})"
+		],
+		"description": "(Returns Any[]) Removes the given values from an array"
 	}
 }
