@@ -9,8 +9,8 @@
 ## Features
 <ul style="list-style-type: none;">
 <li><input type="checkbox" disabled checked> Add syntax highlight for Ruota</li>
+<li><input type="checkbox" disabled checked> Run Ruota projects directly in VS Code</li>
 <li><input type="checkbox" disabled> Add code snippets for Ruota</li>
-<li><input type="checkbox" disabled> Run Ruota projects directly in VS Code</li>
 </ul>
 
 More soon™
