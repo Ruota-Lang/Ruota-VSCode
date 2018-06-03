@@ -201,5 +201,62 @@
 			"${1:socket}.shutdown()"
 		],
 		"description": "(Returns Void) Shutsdown a Socket's connection"
+	},
+
+	"System_Path": {
+		"prefix": "System.path",
+		"body": [
+			"System.path()"
+		],
+		"description": "(Returns String) Returns the current path of the running script"
+	},
+	"System_Dir": {
+		"prefix": "System.dir",
+		"body": [
+			"System.dir(${1:path})"
+		],
+		"description": "(Returns String[]) Returns a string array of the files in the given path"
+	},
+	"System_Exists": {
+		"prefix": "System.exists",
+		"body": [
+			"System.exists(${1:path})"
+		],
+		"description": "(Returns Number) Returns whether a particular folder of file exists"
+	},
+	"System_MKDir": {
+		"prefix": "System.mkdir",
+		"body": [
+			"System.mkdir(${1:path})"
+		],
+		"description": "(Returns Void) Creates a folder at the given path"
+	},
+	"System_Remove": {
+		"prefix": "System.remove",
+		"body": [
+			"System.remove(${1:path})"
+		],
+		"description": "(Returns Void) Removes a folder or file at a given path"
+	},
+	"System_Size": {
+		"prefix": "System.size",
+		"body": [
+			"System.size(${1:path})"
+		],
+		"description": "(Returns Number) Returns the size in bytes of a file"
+	},
+	"System_Copy": {
+		"prefix": "System.copy",
+		"body": [
+			"System.copy(${1:origin}, ${2:path})"
+		],
+		"description": "(Returns Void) Copies a file or folder to a new path"
+	},
+	"System_Rename": {
+		"prefix": "System.rename",
+		"body": [
+			"System.rename(${1:origin}, ${2:path})"
+		],
+		"description": "(Returns Void) Renames a file or folder to a new path"
 	}
 }

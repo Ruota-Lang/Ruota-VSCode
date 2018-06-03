@@ -4,6 +4,7 @@
 - Add Snippets for Strings
 - Add Snippets for Arrays
 - Add Snippets for Winsock
+- Add Snippets for System
 
 ## 0.1.5
 - Add `Ruota: Run` command to run current file with `ruota.exe`
