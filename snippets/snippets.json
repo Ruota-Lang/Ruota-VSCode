@@ -258,5 +258,111 @@
 			"System.rename(${1:origin}, ${2:path})"
 		],
 		"description": "(Returns Void) Renames a file or folder to a new path"
+	},
+
+	"Map": {
+		"prefix": "map",
+		"body": [
+			"${1:variable} := new Map;"
+		],
+		"description": "Creates a new map"
+	},
+	"Map_contents": {
+		"prefix": "Map.contents",
+		"body": [
+			"${1:map}.contents"
+		],
+		"description": "(Object:Map.Link[]) An array of Links that store the map's data"
+	},
+	"Map_Index": {
+		"prefix": "Map.index",
+		"body": [
+			"${1:map}.index(${2:key})"
+		],
+		"description": "(Returns Any) Returns a mutable value assigned to a given key"
+	},
+	"Map_GetKeys": {
+		"prefix": "Map.getKeys",
+		"body": [
+			"${1:map}.getKeys()"
+		],
+		"description": "(Returns String[]) Returns an array of the Map's keys"
+	},
+	"Map_GetValues": {
+		"prefix": "Map.getValues",
+		"body": [
+			"${1:map}.getValues()"
+		],
+		"description": "(Returns String[]) Returns an array of the Map's values"
+	},
+	"Map_ContainsKey": {
+		"prefix": "Map.containsKey",
+		"body": [
+			"${1:map}.containsKey(${2:key})"
+		],
+		"description": "(Returns Number) Returns 1 if the Map contains the given key, otherwise returns 0"
+	},
+	"Map_ContainsValue": {
+		"prefix": "Map.containsValue",
+		"body": [
+			"${1:map}.containsValue(${2:value})"
+		],
+		"description": "(Returns Number) Returns 1 if the Map contains the given value, otherwise returns 0"
+	},
+	"Map_Iterator": {
+		"prefix": "Map.iterator",
+		"body": [
+			"${1:map}.iterator()"
+		],
+		"description": "(Returns Any[]) Returns an array of the Map's data"
+	},
+	"Map_Size": {
+		"prefix": "Map.size",
+		"body": [
+			"${1:map}.size()"
+		],
+		"description": "(Returns Number) Returns the current size of the Map"
+	},
+	"Map_String": {
+		"prefix": "Map.string",
+		"body": [
+			"${1:map}.string()"
+		],
+		"description": "(Returns String) Returns a string representation of the Map"
+	},
+	"Map_Equals": {
+		"prefix": "Map.equals",
+		"body": [
+			"${1:map}.(${2:map})"
+		],
+		"description": "(Returns Number) Returns 1 if the two maps are equivalent in values, otherwise 0"
+	},
+	"Map_Link_key": {
+		"prefix": "Map.Link.key",
+		"body": [
+			"${1:link}.key"
+		],
+		"description": "(Any) Key for the Link"
+	},
+	"Map_Link_value": {
+		"prefix": "Map.Link.value",
+		"body": [
+			"${1:link}.value"
+		],
+		"description": "(Any) Value for the Link"
+	},
+	"Map_Link_Init": {
+		"prefix": "Map.Link.init",
+		"body": [
+			"${1:link}.init(${2:key}, ${3:value})"
+		],
+		"description": "(Returns Constructor) Constructor for the Link object, assigns itself a given key and value"
+	},
+	"Map_Link_String": {
+		"prefix": "Map.Link.string",
+		"body": [
+			"${1:link}.string()"
+		],
+		"description": "(Returns String) Returns a string representation of the Link"
 	}
 }
