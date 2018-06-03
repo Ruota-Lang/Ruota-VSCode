@@ -11,7 +11,12 @@
 	"categories": [
 		"Programming Languages"
 	],
+	"main": "extension.js",
 	"contributes": {
+		"commands": [{
+			"command": "ruota.sayHello",
+			"title": "Ruota: Hello"
+		}],
 		"languages": [
 			{
 				"id": "ruo",
