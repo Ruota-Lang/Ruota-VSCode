@@ -1,0 +1,60 @@
+# LinkedList Example
+
+load "List";
+
+dynamic LinkedList :: List +> {
+	head := null;
+	length := 0;
+
+	# Adds element to list
+	add(&e, pos = null) => v from {
+		head == null then {
+			head = new Link(e);
+		} else {
+			curr := head;
+			i := 0;
+			curr.next != null && (pos != null then i < pos else true) do { 
+				curr = curr.next
+			};
+			curr.next = new Link(e);
+		};
+		length += 1;
+		v &= e;
+	};
+
+	# Retrieves mutable element from list
+	index(pos) => e from {
+		pos < 0 || pos >= length then throw("LinkedList: index out of bounds!");
+		e = null;
+		curr := head;
+		[1 :> pos] ->> {curr = curr.next};
+		e &= curr.value;
+	};
+
+	# Removes element from list
+	remove(pos) => {
+		pos < 0 || pos >= length then throw("LinkedList: index out of bounds!");
+		curr := head;
+		prev := null;
+		[0 : pos] ->> {
+			prev = curr;
+			curr = curr.next;
+		};
+		prev == null then head = curr.next;
+		prev.next = curr.next;
+		length -= 1;
+	};
+
+	# Retrieves length of the list
+	size() => { self.length };
+
+	dynamic Link :: {
+		value := null;
+		next := null;
+
+		init(&value) => {
+			self.value &= value;
+			next = null;
+		};
+	};
+};
