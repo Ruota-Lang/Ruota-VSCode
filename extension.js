@@ -1,11 +1,11 @@
-"use strict";
+const vscode = require('vscode');
 
-const vscode_1 = require("vscode");
+function activate(context) {
+    let disposable = vscode.commands.registerCommand("ruota.sayHello", function () {
+        vscode.window.showInformationMessage("Hello, World!");
+    });
 
-function activate() {
-	vscode_1.commands.registerCommand('ruota.sayHello', () => {
-		vscode_1.window.showInformationMessage('Hello World!');
-	});
+    context.subscriptions.push(disposable);
 }
 
 exports.activate = activate;

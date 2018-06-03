@@ -11,7 +11,10 @@
 	"categories": [
 		"Programming Languages"
 	],
-	"main": "extension.js",
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+	"main": "./extension",
 	"contributes": {
 		"commands": [{
 			"command": "ruota.sayHello",
@@ -51,5 +54,12 @@
 		"id": "816fa68a-dce1-48a5-9bb2-dd18593889f8",
 		"publisherDisplayName": "Minin",
 		"publisherId": "6cc86b95-7a38-48dd-9eb7-f5933e6a57d5"
-	}
+	},
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
 }
