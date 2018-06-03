@@ -1,3 +1,104 @@
 {
-	
+	"For_Range": {
+		"prefix": "for",
+		"body": [
+			"i in [${1:start} : ${2:end}] ->> {",
+				"\t$0",
+			"};"
+		],
+		"description": "Loop through range"
+	},
+	"For_Array": {
+		"prefix": "for:a",
+		"body": [
+			"i in ${1:array} ->> {",
+				"\t$0",
+			"};"
+		],
+		"description": "Loop through array"
+	},
+
+	"Function": {
+		"prefix": "function",
+		"body": [
+			"${1:name}(${2:params}) => {",
+				"\t$0",
+			"};"
+		],
+		"description": "Defines a function with names and parameters"
+	},
+	"Function_Returns": {
+		"prefix": "function:r",
+		"body": [
+			"${1:name}(${2:params}) => ${3:returns} from {",
+				"\t$0",
+			"};"
+		],
+		"description": "Defines a function that returns a variable"
+	},
+
+	"Load": {
+		"prefix": "load",
+		"body": [
+			"load \"${1|Arrays,Strings,Winsock,System,Map,LinkedList,File|}\";"
+		],
+		"description": "Imports a library thats adds functionality to Ruota"
+	},
+
+	"Strings_Replace": {
+		"prefix": "Strings.replace",
+		"body": [
+			"Strings.replace(${1:string}, ${2:a}, ${3:b})"
+		],
+		"description": "(Returns String) Replace all instances of char a with char b within the given string"
+	},
+	"Strings_Split": {
+		"prefix": "Strings.split",
+		"body": [
+			"Strings.split(${1:string}, ${2:char}, ${3:max})"
+		],
+		"description": "(Returns Array) Splits a given string by a given char, returning an array of all substrings created by the split, up to a given maximum splits. If the max is -1, then the splits are unlimited"
+	},
+	"Strings_Remove": {
+		"prefix": "Strings.remove",
+		"body": [
+			"Strings.remove(${1:string}, ${2:char})"
+		],
+		"description": "(Returns String) Removes all instances of a given char"
+	},
+	"Strings_Join": {
+		"prefix": "Strings.join",
+		"body": [
+			"Strings.join(${1:array}, ${2:char})"
+		],
+		"description": "(Returns String) Joins the values of an array into a single string, delineated by a given char"
+	},
+	"Strings_Find": {
+		"prefix": "Strings.find",
+		"body": [
+			"Strings.find(${1:string}, ${2:pattern})"
+		],
+		"description": "(Returns Number) Searches across a string for the first instance of a given pattern, returning the index of the first char in that match. If no match is found, then the function returns -1"
+	},
+	"Strings_FindAll": {
+		"prefix": "Strings.findAll",
+		"body": [
+			"Strings.findAll(${1:string}, ${2:pattern})"
+		],
+		"description": "(Returns String[]) Searches across a string for all instances of a given pattern, returning the indices of the first char in those matches. If no match is found, then the function returns an empty array"
+	},
+	"Strings_ToUpper": {
+		"prefix": "Strings.toUpper",
+		"body": [
+			"Strings.toUpper(${1:string})"
+		],
+		"description": "(Returns String) Converts a string to uppercase"
+	},
+	"Strings_ToLower": {
+		"prefix": "Strings.toLower",
+		"body": [
+			"Strings.toLower(${1:string})"
+		],
+		"description": "(Returns String) Converts a string to lowercase"
+	}
 }

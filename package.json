@@ -2,7 +2,7 @@
 	"name": "ruota",
 	"displayName": "Ruota",
 	"description": "Adds Ruota syntax highlighting to VSCode",
-	"version": "0.1.5",
+	"version": "0.2.5",
 	"publisher": "minin",
 	"icon": "Ruota.png",
 	"engines": {
@@ -35,14 +35,14 @@
 		],
 		"grammars": [
 			{
-				"language": "ruota",
+				"language": "ruo",
 				"scopeName": "source.ruota",
 				"path": "./syntaxes/ruo.tmLanguage"
 			}
 		],
         "snippets": [
             {
-                "language": "ruota",
+                "language": "ruo",
                 "path": "./snippets/snippets.json"
             }
         ]
