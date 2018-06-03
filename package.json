@@ -9,7 +9,7 @@
 		"vscode": "^1.23.0"
 	},
 	"categories": [
-		"Programming Languages"
+		"Programming Languages", "Snippets"
 	],
     "activationEvents": [
         "onCommand:ruota.run"
@@ -35,11 +35,17 @@
 		],
 		"grammars": [
 			{
-				"language": "ruo",
+				"language": "ruota",
 				"scopeName": "source.ruota",
 				"path": "./syntaxes/ruo.tmLanguage"
 			}
-		]
+		],
+        "snippets": [
+            {
+                "language": "ruota",
+                "path": "./snippets/snippets.json"
+            }
+        ]
 	},
 	"license": "GPL-3.0",
 	"bugs": {
