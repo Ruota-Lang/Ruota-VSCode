@@ -333,7 +333,7 @@
 	"Map_Equals": {
 		"prefix": "Map.equals",
 		"body": [
-			"${1:map}.(${2:map})"
+			"${1:map}.equals(${2:map})"
 		],
 		"description": "(Returns Number) Returns 1 if the two maps are equivalent in values, otherwise 0"
 	},

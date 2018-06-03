@@ -1,5 +1,5 @@
 # Changelog
-## 0.2.5
+## 1.1.5
 - Add Snippets for general functions
 - Add Snippets for Strings
 - Add Snippets for Arrays
