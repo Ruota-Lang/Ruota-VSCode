@@ -11,10 +11,11 @@ function activate(context) {
 
 		if (code != undefined) {
 			let path = code.document.fileName.split(".");
-			path = path[path.lenth-1];
+			path.pop();
+			path = path.join(".");
 
 			output.show();
-			output.sendText(`${ruota.path} ${path}`)
+			output.sendText(`"${ruota.path}" "${path}"`)
 		}
 	});
 
