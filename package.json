@@ -2,7 +2,7 @@
 	"name": "ruota",
 	"displayName": "Ruota",
 	"description": "Adds Ruota syntax highlighting to VSCode",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"publisher": "minin",
 	"icon": "Ruota.png",
 	"engines": {
@@ -12,21 +12,26 @@
 		"Programming Languages"
 	],
 	"contributes": {
-		"languages": [{
-			"id": "ruo",
-			"aliases": ["Ruota", "ruota"],
-			"extensions": [".ruo"],
-			"configuration": "./language-configuration.json"
-		}],
-		"grammars": [{
-			"language": "ruo",
-			"scopeName": "source.ruota",
-			"path": "./syntaxes/ruo.tmLanguage"
-		}],
-		"commands": [{
-			"command": "extension.sayHello",
-			"title": "Hello World"
-		}]
+		"languages": [
+			{
+				"id": "ruo",
+				"aliases": [
+					"Ruota",
+					"ruota"
+				],
+				"extensions": [
+					".ruo"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ruo",
+				"scopeName": "source.ruota",
+				"path": "./syntaxes/ruo.tmLanguage"
+			}
+		]
 	},
 	"license": "GPL-3.0",
 	"bugs": {
@@ -36,5 +41,10 @@
 		"type": "git",
 		"url": "https://github.com/Agilulfulus/Ruota.git"
 	},
-	"homepage": "https://agilulfulus.github.io/Ruota/"
+	"homepage": "https://agilulfulus.github.io/Ruota/",
+	"__metadata": {
+		"id": "816fa68a-dce1-48a5-9bb2-dd18593889f8",
+		"publisherDisplayName": "Minin",
+		"publisherId": "6cc86b95-7a38-48dd-9eb7-f5933e6a57d5"
+	}
 }
