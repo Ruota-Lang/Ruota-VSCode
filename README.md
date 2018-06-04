@@ -1,6 +1,6 @@
 # Ruota
+<img src="https://raw.githubusercontent.com/MininMobile/ruota/master/RuotaBanner.png" alt="Ruota Logo">
 <center>
-	<img src="https://raw.githubusercontent.com/MininMobile/ruota/master/Ruota.png" alt="Ruota Logo" style="width: 200px;"/><br>
 	<a href="https://github.com/Agilulfulus/Ruota/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Agilulfulus/Ruota.svg?style=for-the-badge"/></a>
 	<a href="https://github.com/Agilulfulus/Ruota/issues"><img src="https://img.shields.io/github/issues/Agilulfulus/Ruota.svg?style=for-the-badge"/></a>
 	<a href="https://github.com/Agilulfulus/Ruota/network"><img src="https://img.shields.io/github/forks/Agilulfulus/Ruota.svg?style=for-the-badge"/></a>
