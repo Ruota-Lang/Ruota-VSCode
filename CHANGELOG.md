@@ -4,6 +4,7 @@
 - Add Snippets for Objects
 - Add Snippets for Variables
 - Add Snippets for Math
+- Add Snippets for Print, Printl and Eval
 
 ## 1.1.5
 - Add Snippets for general functions

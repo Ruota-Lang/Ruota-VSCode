@@ -2,7 +2,7 @@
 	"For_Range": {
 		"prefix": "for",
 		"body": [
-			"i in [${1:start} : ${2:end}] ->> {",
+			"i in [${1:start} ${2|:,:>|} ${3:end}] ->> {",
 				"\t$0",
 			"};"
 		],
@@ -69,14 +69,36 @@
 		"body": [
 			"${1:variable} := $0"
 		],
-		"body": "Define a new variable"
+		"description": "Define a new variable"
 	},
 	"Variable_Reassign": {
 		"prefix": "var:r",
 		"body": [
 			"${1:variable} = $0"
 		],
-		"body": "Re-assign the value of a variable"
+		"description": "Re-assign the value of a variable"
+	},
+
+	"Print": {
+		"prefix": "p",
+		"body": [
+			"print(${1:text})"
+		],
+		"description": "Logs given text to output console"
+	},
+	"Printl": {
+		"prefix": "pl",
+		"body": [
+			"printl(${1:text})"
+		],
+		"description": "Logs given text to output console followed by a newline character"
+	},
+	"Eval": {
+		"prefix": "eval",
+		"body": [
+			"eval(${1:code})"
+		],
+		"description": "Evaluate string as Ruota code"
 	},
 
 	"Strings_Replace": {
