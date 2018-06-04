@@ -1,5 +1,6 @@
 # Changelog
 ## 1.2.5
+- Update Banner to higher-resolution
 - Add Snippets for Objects
 - Add Snippets for Math
 
