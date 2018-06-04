@@ -45,6 +45,25 @@
 		"description": "Imports a library thats adds functionality to Ruota"
 	},
 
+	"Object": {
+		"prefix": "object",
+		"body": [
+			"${1|static,dynamic,virtual} ${2:object} :: {",
+				"\t$0",
+			"};"
+		],
+		"description": "Defines an object"
+	},
+	"Object_Inherits": {
+		"prefix": "object:i",
+		"body": [
+			"${1|static,dynamic} ${2:object} :: ${3:inherit} +> {",
+				"\t$0",
+			"};"
+		],
+		"description": "Defines an object that inherits from a virtual object"
+	},
+
 	"Strings_Replace": {
 		"prefix": "Strings.replace",
 		"body": [
