@@ -1,4 +1,7 @@
 # Changelog
+## 1.2.6
+- Fixed Trigonometry Snippets with improper prefixes
+
 ## 1.2.5
 - Update Banner to higher-resolution
 - Add Snippets for Objects

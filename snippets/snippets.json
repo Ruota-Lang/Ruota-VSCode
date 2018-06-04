@@ -656,30 +656,30 @@
 		"description": "(Returns Number) Returns the factorial of given number"
 	},
 	"Math_Cos": {
-		"prefix": "Math.",
+		"prefix": "Math.cos",
 		"body": [
-			"Math.(${1:x}, {2:t})"
+			"Math.cos(${1:x}, {2:t})"
 		],
 		"description": "(Returns Number)"
 	},
 	"Math_Sin": {
-		"prefix": "Math.",
+		"prefix": "Math.sin",
 		"body": [
-			"Math.(${1:x}, {2:t})"
+			"Math.sin(${1:x}, {2:t})"
 		],
 		"description": "(Returns Number)"
 	},
 	"Math_Tan": {
-		"prefix": "Math.",
+		"prefix": "Math.tan",
 		"body": [
-			"Math.(${1:x}, {2:t})"
+			"Math.tan(${1:x}, {2:t})"
 		],
 		"description": "(Returns Number)"
 	},
 	"Math_Exp": {
-		"prefix": "Math.",
+		"prefix": "Math.exp",
 		"body": [
-			"Math.(${1:x}, {2:t})"
+			"Math.exp(${1:x}, {2:t})"
 		],
 		"description": "(Returns Number)"
 	}
