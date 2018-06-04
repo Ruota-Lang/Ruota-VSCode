@@ -2,6 +2,7 @@
 ## 1.2.5
 - Update Banner to higher-resolution
 - Add Snippets for Objects
+- Add Snippets for Variables
 - Add Snippets for Math
 
 ## 1.1.5

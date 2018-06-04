@@ -64,6 +64,21 @@
 		"description": "Defines an object that inherits from a virtual object"
 	},
 
+	"Variable": {
+		"prefix": "var",
+		"body": [
+			"${1:variable} := $0"
+		],
+		"body": "Define a new variable"
+	},
+	"Variable_Reassign": {
+		"prefix": "var:r",
+		"body": [
+			"${1:variable} = $0"
+		],
+		"body": "Re-assign the value of a variable"
+	},
+
 	"Strings_Replace": {
 		"prefix": "Strings.replace",
 		"body": [
