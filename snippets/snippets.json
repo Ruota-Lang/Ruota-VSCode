@@ -539,5 +539,111 @@
 			"${1:file}.close()"
 		],
 		"description": "(Returns Void) Closes the file, deallocating the pointer's memory"
+	},
+
+	"Math_pi": {
+		"prefix": "Math.PI",
+		"body": [
+			"Math.pi"
+		],
+		"description": "(Returns Number) A number accurate to the 6th decimal of pi"
+	},
+	"Math_Floor": {
+		"prefix": "Math.floor",
+		"body": [
+			"Math.floor(${1:x})"
+		],
+		"description": "(Returns Number) Rounds given number to lowest whole unit"
+	},
+	"Math_SQRT": {
+		"prefix": "Math.sqrt",
+		"body": [
+			"Math.sqrt(${1:x})"
+		],
+		"description": "(Returns Number) Returns squareroot of given number"
+	},
+	"Math_Max": {
+		"prefix": "Math.max",
+		"body": [
+			"Math.max(${1:&a}, ${2:&b})"
+		],
+		"description": "(Returns Number) Returns the larger of 2 given numbers"
+	},
+	"Math_Min": {
+		"prefix": "Math.min",
+		"body": [
+			"Math.(${1:&a}, ${2:&b})"
+		],
+		"description": "(Returns Number) Returns the smaller of 2 given numbers"
+	},
+	"Math_Abs": {
+		"prefix": "Math.abs",
+		"body": [
+			"Math.abs(${1:a})"
+		],
+		"description": "(Returns Number) Get the absolute value of given number"
+	},
+	"Math_Round": {
+		"prefix": "Math.round",
+		"body": [
+			"Math.round(${1:a}, ${2:decimal})"
+		],
+		"description": "(Returns Number) Rounds given number to given decimal point"
+	},
+	"Math_Ceil": {
+		"prefix": "Math.ceil",
+		"body": [
+			"Math.ceil(${1:a})"
+		],
+		"description": "(Returns Number) Rounds given number to highest whole unit"
+	},
+	"Math_Sum": {
+		"prefix": "Math.sum",
+		"body": [
+			"Math.sum(${1:a})"
+		],
+		"description": "(Returns Number) Returns the sum of all numbers in given array"
+	},
+	"Math_Prod": {
+		"prefix": "Math.prod",
+		"body": [
+			"Math.prod(${1:a})"
+		],
+		"description": "(Returns Number) Returns the product of given array"
+	},
+	"Math_Fact": {
+		"prefix": "Math.fact",
+		"body": [
+			"Math.fact(${1:x})"
+		],
+		"description": "(Returns Number) Returns the factorial of given number"
+	},
+	"Math_Cos": {
+		"prefix": "Math.",
+		"body": [
+			"Math.(${1:x}, {2:t})"
+		],
+		"description": "(Returns Number)"
+	},
+	"Math_Sin": {
+		"prefix": "Math.",
+		"body": [
+			"Math.(${1:x}, {2:t})"
+		],
+		"description": "(Returns Number)"
+	},
+	"Math_Tan": {
+		"prefix": "Math.",
+		"body": [
+			"Math.(${1:x}, {2:t})"
+		],
+		"description": "(Returns Number)"
+	},
+	"Math_Exp": {
+		"prefix": "Math.",
+		"body": [
+			"Math.(${1:x}, {2:t})"
+		],
+		"description": "(Returns Number)"
 	}
 }
