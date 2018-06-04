@@ -1,4 +1,8 @@
 # Changelog
+## 1.2.7
+- Update About Source
+- Fix Trigonometry Snippets with improper placeholders
+
 ## 1.2.6
 - Fixed Trigonometry Snippets with improper prefixes
 

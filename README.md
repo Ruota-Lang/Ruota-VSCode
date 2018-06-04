@@ -18,4 +18,4 @@ More soon™
 ## What is Ruota?
 Ruota is a high-level abstract weakly-typed langauge. Variable types are, where applicable, implicitly converted. The language is both functional and object-oriented. The essential foundation is that everything, including functions, are variables and are stored as such. “Objects” or “Classes” as they may be called are essentially scopes and functions (variables) that are cloned and manipulated across mutliple instances.
 
-([source](https://agilulfulus.github.io/Ruota/))
+([source](https://ruota-lang.github.io/Ruota/))

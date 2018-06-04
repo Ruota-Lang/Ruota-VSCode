@@ -658,28 +658,28 @@
 	"Math_Cos": {
 		"prefix": "Math.cos",
 		"body": [
-			"Math.cos(${1:x}, {2:t})"
+			"Math.cos(${1:x}, ${2:t})"
 		],
 		"description": "(Returns Number)"
 	},
 	"Math_Sin": {
 		"prefix": "Math.sin",
 		"body": [
-			"Math.sin(${1:x}, {2:t})"
+			"Math.sin(${1:x}, ${2:t})"
 		],
 		"description": "(Returns Number)"
 	},
 	"Math_Tan": {
 		"prefix": "Math.tan",
 		"body": [
-			"Math.tan(${1:x}, {2:t})"
+			"Math.tan(${1:x}, ${2:t})"
 		],
 		"description": "(Returns Number)"
 	},
 	"Math_Exp": {
 		"prefix": "Math.exp",
 		"body": [
-			"Math.exp(${1:x}, {2:t})"
+			"Math.exp(${1:x}, ${2:t})"
 		],
 		"description": "(Returns Number)"
 	}
