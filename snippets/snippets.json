@@ -40,7 +40,7 @@
 	"Load": {
 		"prefix": "load",
 		"body": [
-			"load \"${1|Arrays,Strings,Winsock,System,Map,LinkedList,File|}\";"
+			"load \"${1|Arrays,Strings,Winsock,System,Map,LinkedList|}\";"
 		],
 		"description": "Imports a library thats adds functionality to Ruota"
 	},
@@ -456,5 +456,69 @@
 			"${1:link}.init(${2:value})"
 		],
 		"description": "(Returns Constructor) Constructor for the Link object, assigns itself a given value"
+	},
+
+	"File": {
+		"prefix": "File",
+		"body": [
+			"${1:variable} := new File"
+		],
+		"description": "Creates new File"
+	},
+	"File_ptr": {
+		"prefix": "File.ptr",
+		"body": [
+			"${1:file}.ptr"
+		],
+		"description": "(Pointer) The pointer object referencing the file stream"
+	},
+	"File_mode": {
+		"prefix": "File.mode",
+		"body": [
+			"${1:file}.mode"
+		],
+		"description": "(Char) The mode in which the file has been openned, either read or write"
+	},
+	"File_Init": {
+		"prefix": "File.init",
+		"body": [
+			"${1:file}.init(${2:filename}, ${3:mode})"
+		],
+		"description": "(Returns Constructor) Opens up a file in either read ('r'), write ('w'), or append ('a') mode"
+	},
+	"File_Write": {
+		"prefix": "File.write",
+		"body": [
+			"${1:file}.write(${2:text})"
+		],
+		"description": "(Returns Void) Writes a line of given text to an openned file"
+	},
+	"File_ReadLine": {
+		"prefix": "File.readLine",
+		"body": [
+			"${1:file}.readLine()"
+		],
+		"description": "(Returns String) Reads the subsequent line of text from the file, returns 'null' if the file has reached its end"
+	},
+	"File_ReadAll": {
+		"prefix": "File.readAll",
+		"body": [
+			"${1:file}.readAll()"
+		],
+		"description": "(Returns String) Reads the entire contents of the file, returning them as a string"
+	},
+	"File_Read": {
+		"prefix": "File.read",
+		"body": [
+			"${1:file}.read(${2:length})"
+		],
+		"description": "(Returns String) Reads the next chars of a given length"
+	},
+	"File_Close": {
+		"prefix": "File.close",
+		"body": [
+			"${1:file}.close()"
+		],
+		"description": "(Returns Void) Closes the file, deallocating the pointer's memory"
 	}
 }

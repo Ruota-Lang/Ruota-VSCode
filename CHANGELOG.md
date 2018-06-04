@@ -7,6 +7,9 @@
 - Add Snippets for System
 - Add Snippets for Map
 - Add Snippets for LinkedList
+- Add Snippets for File
+
+(snippets are only available for documented stuff, there's still a lot of thing that are undocumented)
 
 ## 0.1.5
 - Add `Ruota: Run` command to run current file with `ruota.exe`
