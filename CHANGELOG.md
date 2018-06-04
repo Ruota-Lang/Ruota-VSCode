@@ -1,4 +1,8 @@
 # Changelog
+## 1.2.5
+- Add Snippets for Objects
+- Add Snippets for Math
+
 ## 1.1.5
 - Add Snippets for general functions
 - Add Snippets for Strings
