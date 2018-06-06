@@ -48,7 +48,7 @@
 	"Object": {
 		"prefix": "object",
 		"body": [
-			"${1|static,dynamic,virtual} ${2:object} :: {",
+			"${1|static,dynamic,virtual|} ${2:object} :: {",
 				"\t$0",
 			"};"
 		],
@@ -57,7 +57,7 @@
 	"Object_Inherits": {
 		"prefix": "object:i",
 		"body": [
-			"${1|static,dynamic} ${2:object} :: ${3:inherit} +> {",
+			"${1|static,dynamic|} ${2:object} :: ${3:inherit} +> {",
 				"\t$0",
 			"};"
 		],

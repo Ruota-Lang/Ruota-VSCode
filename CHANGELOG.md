@@ -1,4 +1,8 @@
 # Changelog
+## 1.2.8
+- Update Ruota Interpreter
+- Fix Object Snippets
+
 ## 1.2.7
 - Update About Source
 - Fix Trigonometry Snippets with improper placeholders
