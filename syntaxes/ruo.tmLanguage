@@ -72,6 +72,11 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#function_usage</string>
+		</dict>
+		<dict>
+		<dict>
+			<key>include</key>
 			<string>#variable</string>
 		</dict>
 		<dict>
@@ -132,6 +137,18 @@
 				<dict>
 					<key>match</key>
 					<string>\w+(?=\(.*\)\s*\=\>)</string>
+					<key>name</key>
+					<string>entity.name.function.ruota</string>
+				</dict>
+			</array>
+		</dict>
+		<key>function_usage</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(\w+\s*(?=\())</string>
 					<key>name</key>
 					<string>entity.name.function.ruota</string>
 				</dict>
@@ -227,7 +244,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(load|len|arr|chr|str|alloc|type|num|push|pop|mov|post|end|null|struct|true|false)\b</string>
+					<string>\b(keys|get|load|len|arr|chr|str|alloc|type|num|push|pop|mov|post|end|null|struct|true|false)\b</string>
 					<key>name</key>
 					<string>keyword.other.ruota</string>
 				</dict>
