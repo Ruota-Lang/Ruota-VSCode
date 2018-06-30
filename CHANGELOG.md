@@ -1,4 +1,9 @@
 # Changelog
+## 1.3.8
+- Update Ruota Interpreter
+- Update Text Highlighting
+- Modify `source` link on README.md
+
 ## 1.2.8
 - Update Ruota Interpreter
 - Fix Object Snippets
