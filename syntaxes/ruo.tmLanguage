@@ -75,7 +75,6 @@
 			<string>#function_usage</string>
 		</dict>
 		<dict>
-		<dict>
 			<key>include</key>
 			<string>#variable</string>
 		</dict>

@@ -1,4 +1,7 @@
 # Changelog
+## 1.3.9
+- Fix Bug that broke Highlighting
+
 ## 1.3.8
 - Update Ruota Interpreter
 - Update Text Highlighting
