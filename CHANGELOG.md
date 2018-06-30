@@ -1,4 +1,8 @@
 # Changelog
+## 1.3.10
+- Update Ruota Interpreter
+- Update WinSock Snippets
+
 ## 1.3.9
 - Fix Bug that broke Highlighting
 
