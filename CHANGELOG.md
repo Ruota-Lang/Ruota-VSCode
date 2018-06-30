@@ -1,7 +1,7 @@
 # Changelog
 ## 1.3.10
 - Update Ruota Interpreter
-- Update WinSock Snippets
+- Update WinSock Snippets (WinSock has been replaced by Network)
 
 ## 1.3.9
 - Fix Bug that broke Highlighting

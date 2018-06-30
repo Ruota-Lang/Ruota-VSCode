@@ -40,7 +40,7 @@
 	"Load": {
 		"prefix": "load",
 		"body": [
-			"load \"${1|Arrays,Strings,Winsock,System,Map,LinkedList|}\";"
+			"load \"${1|Arrays,Strings,Network,System,Map,LinkedList|}\";"
 		],
 		"description": "Imports a library thats adds functionality to Ruota"
 	},
@@ -187,72 +187,72 @@
 		"description": "(Returns Any[]) Removes the given values from an array"
 	},
 
-	"Winsock_Static": {
-		"prefix": "Winsock.static",
+	"Network_Static": {
+		"prefix": "Network.static",
 		"body": [
-			"Winsock.static()"
+			"Network.static()"
 		],
-		"description": "(Returns Void) Initiates the Winsock driver, must be declared before using any other function"
+		"description": "(Returns Void) Initiates the Network driver, must be declared before using any other function"
 	},
-	"Winsock_CreateSocket": {
-		"prefix": "Winsock.createSocket",
+	"Network_CreateSocket": {
+		"prefix": "Network.createSocket",
 		"body": [
-			"Winsock.createSocket()"
+			"Network.createSocket()"
 		],
-		"description": "(Returns Object:Winsock.Socket) Creates a new Socket object"
+		"description": "(Returns Object:Network.Socket) Creates a new Socket object"
 	},
-	"Winsock_GetAddresses": {
-		"prefix": "Winsock.getAddresses",
+	"Network_GetAddresses": {
+		"prefix": "Network.getAddresses",
 		"body": [
-			"Winsock.getAddresses(${1:url})"
+			"Network.getAddresses(${1:url})"
 		],
 		"description": "(Returns Any[]) Returns the IP addresses of a corresponding URL"
 	},
 
-	"Winsock_Socket_ptr": {
-		"prefix": "Winsock.Socket.ptr",
+	"Network_Socket_ptr": {
+		"prefix": "Network.Socket.ptr",
 		"body": [
 			"${1:socket}.ptr"
 		],
-		"description": "(Pointer) Pointer toward the Winsock object"
+		"description": "(Pointer) Pointer toward the Network object"
 	},
-	"Winsock_Socket_Init": {
-		"prefix": "Winsock.Socket.init",
+	"Network_Socket_Init": {
+		"prefix": "Network.Socket.init",
 		"body": [
 			"${1:socket}.init(${2:ptr})"
 		],
 		"description": "(Returns Constructor) Constructor for the Socket object"
 	},
-	"Winsock_Socket_Connect": {
-		"prefix": "Winsock.Socket.Connect",
+	"Network_Socket_Connect": {
+		"prefix": "Network.Socket.Connect",
 		"body": [
 			"${1:socket}.connect(${2:address}, ${3:port})"
 		],
 		"description": "(Returns Void) Connects the socket to a given address through a given port. If the address is a URL, it selects the URL's corresponding IP address"
 	},
-	"Winsock_Socket_Send": {
-		"prefix": "Winsock.Socket.send",
+	"Network_Socket_Send": {
+		"prefix": "Network.Socket.send",
 		"body": [
 			"${1:socket}.send(${2:data})"
 		],
 		"description": "(Returns Void) Sends data through the socket, automatically converted into a string"
 	},
-	"Winsock_Socket_Receive": {
-		"prefix": "Winsock.Socket.receive",
+	"Network_Socket_Receive": {
+		"prefix": "Network.Socket.receive",
 		"body": [
 			"${1:socket}.receive(${2:bytes}, ${3:callback})"
 		],
 		"description": "(Returns String) Receives data up to a given amount of bytes from server. If no callback is given, the function waits until it recieves a response and then returns the function. If a callback is given, it detaches the receiving function from the main thread and calls the callback when it receives the answer, passing the value to the callback"
 	},
-	"Winsock_Socket_Listen": {
-		"prefix": "Winsock.Socket.listen",
+	"Network_Socket_Listen": {
+		"prefix": "Network.Socket.listen",
 		"body": [
 			"${1:socket}.listen(${2:callback}, ${3:bytes}, ${4:blocking})"
 		],
 		"description": "(Returns Void) Listens continuously through the socket, referring to a callback function whenever it receives data. By default it operates on a separate thread, but can be specified to block the main thread while it receives. Only ends when the connection breaks"
 	},
-	"Winsock_Socket_Shutdown": {
-		"prefix": "Winsock.Socket.shutdown",
+	"Network_Socket_Shutdown": {
+		"prefix": "Network.Socket.shutdown",
 		"body": [
 			"${1:socket}.shutdown()"
 		],
