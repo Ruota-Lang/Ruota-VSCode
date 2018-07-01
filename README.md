@@ -10,7 +10,7 @@
 <ul style="list-style-type: none;">
 <li><input type="checkbox" disabled checked> Add syntax highlight for Ruota</li>
 <li><input type="checkbox" disabled checked> Add "intellisense-like" code snippets for Ruota</li>
-<li><input type="checkbox" disabled checked> Run Ruota projects directly in VS Code</li>
+<li><input type="checkbox" disabled checked> Run Ruota projects directly in VS Code WITHOUT Installing the Interpreter</li>
 </ul>
 
 More soon™
