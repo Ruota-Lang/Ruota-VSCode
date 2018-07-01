@@ -186,20 +186,13 @@
 		],
 		"description": "(Returns Any[]) Removes the given values from an array"
 	},
+
 	"Network_GetAddresses": {
 		"prefix": "Network.getAddresses",
 		"body": [
 			"Network.getAddresses(${1:url})"
 		],
 		"description": "(Returns Any[]) Returns the IP addresses of a corresponding URL"
-	},
-
-	"Socket_ptr": {
-		"prefix": "Socket.ptr",
-		"body": [
-			"${1:socket}.ptr"
-		],
-		"description": "(Pointer) Pointer toward the Network object"
 	},
 	"new_Socket": {
 		"prefix": "new Socket",
@@ -214,6 +207,13 @@
 			"new IOService(})"
 		],
 		"description": "(Returns Constructor) Constructor for the IOService object"
+	},
+	"Socket_ptr": {
+		"prefix": "Socket.ptr",
+		"body": [
+			"${1:socket}.ptr"
+		],
+		"description": "(Pointer) Pointer toward the Network object"
 	},
 	"Socket_Connect": {
 		"prefix": "Socket.Connect",

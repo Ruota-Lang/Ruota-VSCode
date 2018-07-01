@@ -1,5 +1,5 @@
 # Ruota
-![Ruota Logo](https://raw.githubusercontent.com/MininMobile/ruota/master/RuotaBanner.png "Ruota Logo")
+![Ruota Logo](https://raw.githubusercontent.com/MininMobile/ruota/master/LogoBanner.png "Ruota Logo")
 <center>
 	<a href="https://github.com/Agilulfulus/Ruota/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Agilulfulus/Ruota.svg?style=for-the-badge"/></a>
 	<a href="https://github.com/Agilulfulus/Ruota/issues"><img src="https://img.shields.io/github/issues/Agilulfulus/Ruota.svg?style=for-the-badge"/></a>

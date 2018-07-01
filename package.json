@@ -4,7 +4,7 @@
 	"description": "Adds Ruota syntax highlighting to VSCode",
 	"version": "1.4.10",
 	"publisher": "minin",
-	"icon": "Ruota.png",
+	"icon": "Logo.png",
 	"engines": {
 		"vscode": "^1.23.0"
 	},
