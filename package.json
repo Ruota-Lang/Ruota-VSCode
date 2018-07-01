@@ -2,7 +2,7 @@
 	"name": "ruota",
 	"displayName": "Ruota",
 	"description": "Adds Ruota syntax highlighting to VSCode",
-	"version": "1.4.10",
+	"version": "1.4.11",
 	"publisher": "minin",
 	"icon": "Logo.png",
 	"engines": {
@@ -49,13 +49,13 @@
 	},
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/Agilulfulus/Ruota/issues"
+		"url": "https://github.com/Ruota-Lang/Ruota/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Agilulfulus/Ruota.git"
+		"url": "https://github.com/Ruota-Lang/Ruota.git"
 	},
-	"homepage": "https://agilulfulus.github.io/Ruota/",
+	"homepage": "https://ruota-lang.github.io/Ruota/",
 	"__metadata": {
 		"id": "816fa68a-dce1-48a5-9bb2-dd18593889f8",
 		"publisherDisplayName": "Minin",
