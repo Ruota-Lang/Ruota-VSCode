@@ -186,21 +186,6 @@
 		],
 		"description": "(Returns Any[]) Removes the given values from an array"
 	},
-
-	"Network_Static": {
-		"prefix": "Network.static",
-		"body": [
-			"Network.static()"
-		],
-		"description": "(Returns Void) Initiates the Network driver, must be declared before using any other function"
-	},
-	"Network_CreateSocket": {
-		"prefix": "Network.createSocket",
-		"body": [
-			"Network.createSocket()"
-		],
-		"description": "(Returns Object:Network.Socket) Creates a new Socket object"
-	},
 	"Network_GetAddresses": {
 		"prefix": "Network.getAddresses",
 		"body": [
@@ -209,54 +194,68 @@
 		"description": "(Returns Any[]) Returns the IP addresses of a corresponding URL"
 	},
 
-	"Network_Socket_ptr": {
-		"prefix": "Network.Socket.ptr",
+	"Socket_ptr": {
+		"prefix": "Socket.ptr",
 		"body": [
 			"${1:socket}.ptr"
 		],
 		"description": "(Pointer) Pointer toward the Network object"
 	},
-	"Network_Socket_Init": {
-		"prefix": "Network.Socket.init",
+	"new_Socket": {
+		"prefix": "new Socket",
 		"body": [
-			"${1:socket}.init(${2:ptr})"
+			"new Socket(${2:ios})"
 		],
 		"description": "(Returns Constructor) Constructor for the Socket object"
 	},
-	"Network_Socket_Connect": {
-		"prefix": "Network.Socket.Connect",
+	"new_IOService": {
+		"prefix": "new IOService",
+		"body": [
+			"new IOService(})"
+		],
+		"description": "(Returns Constructor) Constructor for the IOService object"
+	},
+	"Socket_Connect": {
+		"prefix": "Socket.Connect",
 		"body": [
 			"${1:socket}.connect(${2:address}, ${3:port})"
 		],
 		"description": "(Returns Void) Connects the socket to a given address through a given port. If the address is a URL, it selects the URL's corresponding IP address"
 	},
-	"Network_Socket_Send": {
-		"prefix": "Network.Socket.send",
+	"Socket_Send": {
+		"prefix": "Socket.send",
 		"body": [
 			"${1:socket}.send(${2:data})"
 		],
 		"description": "(Returns Void) Sends data through the socket, automatically converted into a string"
 	},
-	"Network_Socket_Receive": {
-		"prefix": "Network.Socket.receive",
+	"Socket_Receive": {
+		"prefix": "Socket.receive",
 		"body": [
 			"${1:socket}.receive(${2:bytes}, ${3:callback})"
 		],
 		"description": "(Returns String) Receives data up to a given amount of bytes from server. If no callback is given, the function waits until it recieves a response and then returns the function. If a callback is given, it detaches the receiving function from the main thread and calls the callback when it receives the answer, passing the value to the callback"
 	},
-	"Network_Socket_Listen": {
-		"prefix": "Network.Socket.listen",
+	"Socket_Listen": {
+		"prefix": "Socket.listen",
 		"body": [
 			"${1:socket}.listen(${2:callback}, ${3:bytes}, ${4:blocking})"
 		],
 		"description": "(Returns Void) Listens continuously through the socket, referring to a callback function whenever it receives data. By default it operates on a separate thread, but can be specified to block the main thread while it receives. Only ends when the connection breaks"
 	},
-	"Network_Socket_Shutdown": {
-		"prefix": "Network.Socket.shutdown",
+	"Socket_Shutdown": {
+		"prefix": "Socket.shutdown",
 		"body": [
 			"${1:socket}.shutdown()"
 		],
 		"description": "(Returns Void) Shutsdown a Socket's connection"
+	},
+	"IOService_Shutdown": {
+		"prefix": "IOService.shutdown",
+		"body": [
+			"${1:ios}.shutdown()"
+		],
+		"description": "(Returns Void) Shutsdown a IOService's connection"
 	},
 
 	"System_Path": {
