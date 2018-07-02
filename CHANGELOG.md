@@ -1,4 +1,8 @@
 # Changelog
+## 1.4.12
+- Update Ruota Interpreter
+- Add JSONTree Snippets
+
 ## 1.4.11
 - Change links to new repository
 
