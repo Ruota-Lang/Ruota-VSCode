@@ -40,7 +40,7 @@
 	"Load": {
 		"prefix": "load",
 		"body": [
-			"load \"${1|Arrays,Strings,Network,System,Map,LinkedList|}\";"
+			"load \"${1|Arrays,Network,System,Map,LinkedList|}\";"
 		],
 		"description": "Imports a library thats adds functionality to Ruota"
 	},
@@ -99,6 +99,14 @@
 			"eval(${1:code})"
 		],
 		"description": "Evaluate string as Ruota code"
+	},
+
+	"New_JSONTree": {
+		"prefix": "json",
+		"body": [
+			"${1:variable} := new JSONTree(${2:json});$0"
+		],
+		"description": "Create a new JSONTree object"
 	},
 
 	"Strings_Replace": {
