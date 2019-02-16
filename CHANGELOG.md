@@ -1,4 +1,13 @@
 # Changelog
+## 1.5.0
+- Update Syntax Highlighting (RuotaV2 Syntax)
+- Update Ruota Interpreter (RuotaV2 Beta)
+	- Remove Old Snippets
+	- Running files with the `Ruota: Run File` command is currently broken
+
+<details>
+	<summary>View Older Changes</summary>
+
 ## 1.4.12
 - Update Ruota Interpreter
 - Add JSONTree Snippets
@@ -63,3 +72,5 @@
 
 ## 0.0.1
 - Where it all began
+
+</details>
