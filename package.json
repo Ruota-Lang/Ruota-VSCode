@@ -1,25 +1,28 @@
 {
 	"name": "ruota",
 	"displayName": "Ruota",
-	"description": "Adds Ruota syntax highlighting to VSCode",
-	"version": "1.4.12",
+	"description": "Adds Ruota language support for Code.",
+	"version": "1.5.0",
 	"publisher": "minin",
 	"icon": "Logo.png",
 	"engines": {
 		"vscode": "^1.23.0"
 	},
 	"categories": [
-		"Programming Languages", "Snippets", "Other"
+		"Programming Languages",
+		"Other"
 	],
-    "activationEvents": [
-        "onCommand:ruota.run"
-    ],
+	"activationEvents": [
+		"onCommand:ruota.run"
+	],
 	"main": "./extension",
 	"contributes": {
-		"commands": [{
-			"command": "ruota.run",
-			"title": "Ruota: Run File"
-		}],
+		"commands": [
+			{
+				"command": "ruota.run",
+				"title": "Ruota: Run File"
+			}
+		],
 		"languages": [
 			{
 				"id": "ruo",
@@ -39,13 +42,7 @@
 				"scopeName": "source.ruota",
 				"path": "./syntaxes/ruo.tmLanguage"
 			}
-		],
-        "snippets": [
-            {
-                "language": "ruo",
-                "path": "./snippets/snippets.json"
-            }
-        ]
+		]
 	},
 	"license": "GPL-3.0",
 	"bugs": {
@@ -61,11 +58,11 @@
 		"publisherDisplayName": "Minin",
 		"publisherId": "6cc86b95-7a38-48dd-9eb7-f5933e6a57d5"
 	},
-    "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "eslint": "^4.11.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
-    }
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.0.43",
+		"eslint": "^4.11.0",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.29"
+	}
 }
