@@ -1,0 +1,152 @@
+load "cast";
+
+print:void(c:char[~]) => {
+    console_print PASS_REG [c];
+};
+
+print:void(i:int) => {
+    print(cast.str(i));
+};
+
+print:void(d:double) => {
+    print(cast.str(d));
+};
+
+input :: {
+    string:char[~]() => {
+        s:char[~] = console_input_str PASS_REG [];
+        return s;
+    };
+    int:int() => {
+        return cast.int(string());
+    };
+    double:double() => {
+        return cast.double(string());
+    };
+};
+
+rand :: {
+    raw:int() => {
+        i:int = (console_rand PASS_REG [])[0];
+        return i;
+    };
+    int:int(min:int, max:int) => {
+        i:int = raw() % (max - min) + min;
+        return i;
+    };
+    int:int(max:int) => {
+        i:int = int(0, max);
+        return i;
+    };
+};
+
+file :: {
+    read struct {
+        ptr:void;
+        init:void(filename:char[~]) => {
+            self.ptr = (io_open PASS_REG [filename])[0];
+        };
+        pull:char[~]() => {
+            c:char[~];
+            status:bool;
+            [status, c] = (io_read_line PASS_REG [ptr]);
+            status then {
+                return c + "\n";
+            };
+            return "";
+        };
+        close:void() => {
+            io_close PASS_REG [ptr];
+        };
+    };
+    write struct {
+        ptr:void;
+        init:void(filename:char[~]) => {
+            self.ptr = (io_open_w PASS_REG [filename, 'w'])[0];
+        };
+        put:void(line:char[~]) => {
+            io_write PASS_REG [ptr, line];
+        };
+        close:void() => {
+            io_close_w PASS_REG [ptr];
+        };
+    };
+    append struct {
+        ptr:void;
+        init:void(filename:char[~]) => {
+            self.ptr = (io_open_w PASS_REG [filename, 'a'])[0];
+        };
+        put:void(line:char[~]) => {
+            io_write PASS_REG [ptr, line];
+        };
+        close:void() => {
+            io_close_w PASS_REG [ptr];
+        };
+    };
+};
+
+system :: {
+    dir:char[~,~](path:char[~]) => {
+        list:char[~,~] = (system_dir PASS_REG [path]);
+        return list;
+    };
+    dir:char[~,~]() => {
+        list:char[~,~] = dir("./");
+        return list;
+    };
+    mkdir:void(path:char[~]) => {
+        system_mkdir PASS_REG [path];
+    };
+    exists:bool(path:char[~]) => {
+        b:bool = (system_exists PASS_REG [path])[0];
+        return b;
+    };
+    copy:void(origin:char[~], path:char[~]) => {
+        system_copy PASS_REG [origin, path];
+    };
+    rename:void(origin:char[~], path:char[~]) => {
+        system_rename PASS_REG [origin, path];
+    };
+    size:int(path:char[~]) => {
+        i:int = (system_size PASS_REG [path])[0];
+        return i;
+    };
+    remove:void(path:char[~]) => {
+        system_remove PASS_REG [path];
+    };
+};
+
+term :: {
+    color :: {
+        BLACK:int = 0;
+        BLUE:int = 1;
+        GREEN:int = 2;
+        CYAN:int = 3;
+        RED:int = 4;
+        MAGENTA:int = 5;
+        YELLOW:int = 6;
+        WHITE:int = 7;
+        GREY:int = 8;
+        GRAY:int = 8;
+        BRIGHT_BLACK:int = 8;
+        BRIGHT_BLUE:int = 9;
+        BRIGHT_GREEN:int = 10;
+        BRIGHT_CYAN:int = 11;
+        BRIGHT_RED:int = 12;
+        BRIGHT_MAGENTA:int = 13;
+        BRIGHT_YELLOW:int = 14;
+        BRIGHT_WHITE:int = 15;
+        set:void(i:int) => {
+            console_color PASS_REG [i];
+        };
+        map:void() => {
+            i:int in [int -> 0 .. 16] do {
+                j:int in [int -> 0 .. 16] do {
+                    set(i * 16 + j);
+                    print(cast.str(i * 16 + j) + "\t");
+                };
+                print("\n");
+            };
+        };
+    };
+};

@@ -2,7 +2,7 @@
 	"name": "ruota",
 	"displayName": "Ruota",
 	"description": "Adds Ruota language support for Code.",
-	"version": "1.5.0",
+	"version": "1.5.1",
 	"publisher": "minin",
 	"icon": "Logo.png",
 	"engines": {

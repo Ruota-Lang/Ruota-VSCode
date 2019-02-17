@@ -1,0 +1,35 @@
+template map <K, V> in {
+	pair struct {
+		key:K;
+		value:V;
+		init:void(key:K) => {
+			self.key = key;
+		};
+	};
+	arr:pair[~];
+	`[]`:V(key:K) => {
+		p:pair in arr do {
+			p.key == key then {
+				return &p.value;
+			};
+		};
+		arr = arr + [new pair(key)];
+		return &arr[len arr - 1].value;
+	};
+	keyExists:bool(key:K) => {
+		p:pair in arr do {
+			p.key == key then {
+				return true;
+			};
+		};
+		return false;
+	};
+	valueExists:bool(value:V) => {
+		p:pair in arr do {
+			p.value == value then {
+				return true;
+			};
+		};
+		return false;
+	};
+};

@@ -1,0 +1,92 @@
+cast :: {
+    # String Conversions
+    str:char[~](i:int) => {
+        s:char[~] = console_to_string PASS_REG [0, i];
+        return s;
+    };
+
+    str:char[~](l:long) => {
+        s:char[~] = console_to_string PASS_REG [1, l];
+        return s;
+    };
+
+    str:char[~](sh:short) => {
+        s:char[~] = console_to_string PASS_REG [2, sh];
+        return s;
+    };
+
+    str:char[~](d:double) => {
+        s:char[~] = console_to_string PASS_REG [3, d];
+        return s;
+    };
+
+    str:char[~](f:float) => {
+        s:char[~] = console_to_string PASS_REG [4, f];
+        return s;
+    };
+
+    str:char[~](b:bool) => {
+        return (b then "true" else "false");
+    };
+
+    str:char[~](c:char[~]) => {
+        return c;
+    };
+
+    # int Conversions
+    int:int(v:int) => { return v; };
+    int:int(v:long) => { return v; };
+    int:int(v:short) => { return v; };
+    int:int(v:double) => { return v; };
+    int:int(v:float) => { return v; };
+    int:int(v:char) => { return v; };
+    int:int(v:bool) => { return v; };
+    int:int(c:char[~]) => {
+        i:int = (console_to_number PASS_REG [0, c])[0];
+        return i;
+    };
+
+    # long Conversions
+    long:long(v:int) => { return v; };
+    long:long(v:long) => { return v; };
+    long:long(v:short) => { return v; };
+    long:long(v:double) => { return v; };
+    long:long(v:float) => { return v; };
+    long:long(v:char) => { return v; };
+    long:long(v:bool) => { return v; };
+    long:long(c:char[~]) => {
+        v:long = (console_to_number PASS_REG [1, c])[0];
+        return v;
+    };
+    
+    # short Conversions
+    short:short(v:int) => { return v; };
+    short:short(v:long) => { return v; };
+    short:short(v:short) => { return v; };
+    short:short(v:double) => { return v; };
+    short:short(v:float) => { return v; };
+    short:short(v:char) => { return v; };
+    short:short(v:bool) => { return v; };
+    short:short(c:char[~]) => {
+        v:short = (console_to_number PASS_REG [0, c])[0];
+        return v;
+    };
+
+    # char Conversions
+    char:char(v:int) => { return v; };
+    char:char(v:long) => { return v; };
+    char:char(v:short) => { return v; };
+    char:char(v:double) => { return v; };
+    char:char(v:float) => { return v; };
+    char:char(v:char) => { return v; };
+    char:char(v:bool) => { return v; };
+    char:char(c:char[~]) => {
+        v:char = (console_to_number PASS_REG [0, c])[0];
+        return v;
+    };
+
+    double:double(c:char[~]) => {
+        d:double = (console_to_number PASS_REG [3, c])[0];
+        return d;
+    };
+};

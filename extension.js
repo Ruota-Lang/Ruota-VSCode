@@ -17,7 +17,7 @@ function activate(context) {
 				path = path.replace(/\\/g, "\\\\");
 
 			output.show();
-			output.sendText(`"${ruota.path}" "${path}"`);
+			output.sendText(`${ruota.path}" "${path}"`);
 		}
 	});
 

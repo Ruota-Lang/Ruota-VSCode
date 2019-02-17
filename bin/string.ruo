@@ -1,0 +1,71 @@
+load "math";
+
+string struct {
+    CHARS:char[~];
+    init : void(CHARS:char[~]) => {
+        self.CHARS = CHARS;
+    };
+    to_chars : char[~]() => {
+        return CHARS;
+    };
+    clone : string() => {
+        s:String = new string(CHARS);
+        return s;
+    };
+    `[]` : char(pos:long) => {
+        return &CHARS[pos];
+    };
+    `+` : string(s:string) => {
+        new_arr:char[len CHARS + len s.CHARS];
+        i:long = 0;
+        c:char in CHARS do {
+            new_arr[i] = c;
+            i = i + 1;
+        };
+        c:char in s.CHARS do {
+            new_arr[i] = c;
+            i = i + 1;
+        };
+        return new string(new_arr);
+    };
+    `=` : void(s:string) => {
+        CHARS = s.CHARS;
+    };
+    `<` : bool(s:string) => {
+        max:long = math.min(len s.CHARS, len CHARS);
+        i:long in [long -> 0 .. max] do {
+            CHARS[i] > s.CHARS[i] then {
+                return 0;
+            } else CHARS[i] < s.CHARS[i] then {
+                return 1;
+            };
+        };
+        return len CHARS < len s.CHARS;
+    };
+    `>` : bool(s:string) => {
+        max:long = math.min(len s.CHARS, len CHARS);
+        i:long in [long -> 0 .. max] do {
+            CHARS[i] < s.CHARS[i] then {
+                return 0;
+            } else CHARS[i] > s.CHARS[i] then {
+                return 1;
+            };
+        };
+        return len CHARS > len s.CHARS;
+    };
+    `==` : bool(s:string) => {
+        return CHARS == s.CHARS;
+    };
+    `!=` : bool(s:string) => {
+        return CHARS != s.CHARS;
+    };
+    `<=` : bool(s:string) => {
+        return self < s || self == s;
+    };
+    `>=` : bool(s:string) => {
+        return self > s || self == s;
+    };
+    @:char[~]() => {
+        return to_chars();
+    };
+};
